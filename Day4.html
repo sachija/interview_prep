@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 interview prepration</title>
+</head>
+<body>
+<h2>Que 1 what is temporal dead zone</h2>
+<p> It is possible only for let and const variable bcz it doesn't support hoisting.It is time period for which variable is inaccessible until the variable is assign with some value</p>
+
+<h2> Que 2 what is undefine and null</h2>
+we are not supposed to use undefined we can use null by intensionally.
+undefined - when we try to access a variable that is declared but not initialized for var keywords.
+null - Its a value that we initialize to a variable which will later be replaced with some other/true value
+
+<h2> Que 3 what is symbol?</h2>
+symbols are immutable and unique.they are primitive data type.
+
+<h2>Que 4 what is Map and Filter ?</h2>
+map → Executes a function on each element of an array
+Every element of the array is passed to the callback function and returns a new array with the same length.
+When to use map: If we want to perform the same operation/transformation on each element of the array and get back a new array of the same length with the transformed values.
+filter → Remove items which don't satisfy a condition
+Every element of the array is passed to the callback function. On each iteration, if the callback returns true, then that element will be added to the new array, otherwise, it is not added to the new array.
+
+<h2>Que 5 what is event loop and call stack?</h2>
+Stack: This is where all your javascript code gets pushed and executed one by one as the interpreter reads your program, and gets popped out once the execution is done. If your statement is asynchronous: setTimeout, ajax(), promise, or click event, then that code gets forwarded to Event table, this table is responsible for moving your asynchronous code to callback/event queue after specified time.
+ Event loop-the Event Loop, which keeps running continuously and checks the Main stack, if it has any frames to execute, if not then it checks Callback queue, if Callback queue has codes to execute then it pops the message from it to the Main Stack for the execution.
+
+ <h2>Que 6 Explain Local Scope, Block Scope, Functional Scope and Scope Chain in javascript</h2>
+  Global scope-Variables or functions (or methods) which are declared under a global namespace (like area or location) are determined as Global Scope. 
+ It means that all the variables which have global scope can be easily accessed from anywhere within the code or a program.
+ Local scope-Variables that are declared inside a function or a method have Local or Function Scope.
+ It means those variables or functions which are declared inside the function or a method can be accessed within that function only.
+ scope chain-Scope Chain means that one variable has a scope (it may be global or local/function or block scope) is used by another variable or function having another scope (may be global or local/function or block scope).
+
+<h2>Que 7 what is For in loop give its syntax </h2>
+for (variablename in object) {
+    statement or block to execute
+ }
+ In each iteration, one property from object is assigned to variablename and this loop continues till all the properties of the object are exhausted.
+ 
+
+
+
+<script src="./Day4.js"></script>
+</body>
+</html>
